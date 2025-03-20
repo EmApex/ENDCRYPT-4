@@ -272,7 +272,7 @@ while True:
                 
             else:
                 try:
-                    config.read('Data//ENDCRYPT.ini')
+                    config.read("Data//ENDCRYPT.ini")
                 except configparser.MissingSectionHeaderError:
                     print("ERROR: ENDCRYPT.ini is missing its header.\nAdd [KEYS] to the top of the file.")
                     time.sleep(5)

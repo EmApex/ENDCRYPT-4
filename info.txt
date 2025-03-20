@@ -117,7 +117,8 @@ Some choices in the menu haven't been fully tested. ENDCRYPT should never crash,
 does it's because you entered an input I didn't consider. I think I've caught all of these, but
 a couple might still exist.
 
-Pressing enter during a decryption will close the program when it returns to the menu. This is because it queues the enter press and executes it when it returns, which closes the program.
+Pressing enter during a decryption will close the program when it returns to the menu. This is
+because it queues the enter press and executes it when it returns, which closes the program.
 
 
 

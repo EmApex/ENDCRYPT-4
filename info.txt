@@ -1,0 +1,143 @@
+--ENDCRYPT 4--
+
+[WELCOME & FEATURES]
+Welcome to ENDCRYPT 4. This is the fourth major version of the program that I've worked on,
+and I'm proud to have finally finished it. In this version of the program a lot has changed,
+notably:
+
+- Text file encryption is now possible
+- A fully featured options menu has been added
+- Decryption is now faster, and manual mode has been removed (because it was useless)
+- Key generation is now more efficient
+- More encryption on top of your encryption
+- An insane UTF-8 supported character list
+
+There's a bit more to it than that, but most of the other changes are under the hood and you
+won't even notice them. The program should run even faster than before and has even more
+functionality, allowing you to send ridiculously long encrypted messages to your friends
+even faster than before. It  has also been streamlined to be as user-friendly as possible, so
+it should NEVER crash (get in touch if it does!).
+
+
+
+[USING ENDCRYPT]
+To use ENDCRYPT, simply type the number you want and press enter. This will choose the
+corresponding menu item and take you through to the next screen. Pressing enter without typing
+anything will return you to the previous menu in most instances, but there are some screens
+where it won't.
+
+The auto-file encryption works based on how you configure it in the options. By default, AFE
+wants you to enter a file path. This only works on text-based files (more info in
+[KNOWN ISSUES]). When entering a file path, you must include the file extension and file name.
+For example, if I wanted to encrypt 'DirectX.log' in the 'Windows' folder, I would enter the
+following file path:
+C:\Windows\DirectX.log
+In the options you can change the way this function works. You can change it to read from a set
+file every time, make it always use AFE over manual text input, or disable the feature completely.
+
+
+
+[OPTIONS]
+"Encryption Export: ON/OFF"
+Chooses whether ENDCRYPT.ini will be exported automatically, or will prompt to be exported.
+There's no reason to turn this off.
+Default is ON.
+
+"ENDCRYPT_History.ini: ON/OFF"
+Chooses whether or not to export every encryption to an external file called 'ENDCRYPT_History.ini'.
+If left unchecked, this file will take up a lot of space very quickly.
+Default is OFF.
+
+"Fast Mode: ON/OFF"
+Disables some delays to make navigation around the program a bit quicker. Important delays that
+display errors or confirmations will not be skipped.
+Default is OFF.
+
+"Auto-File Encryption: AUTO/PROMPT/NEVER"
+Allows you to toggle between three modes for AFE:
+Auto - will always use AFE for encryption.
+Prompt - will ask for manual mode or AFE.
+Never - will always use manual mode.
+Default is PROMPT.
+
+"Auto-File Encryption: FILE PATH ENTRY"
+Lets you turn file path entry on or off, and set a persistent path. Turning FPE off will make the
+program read from the persistent path every time. The persistent path can be modified with the third
+option.
+Default is ON.
+
+"Read Speed: OFF/SLOW/MED/FAST"
+Adjusts the automatic delay when decrypting. The automatic delay is based on the length of the message
+and the read speed, so it should always last a comfortable amount of time before it goes back to the
+menu. You can adjust the speed here if it feels too slow or too fast, or you simply want to turn this
+feature off.
+Turning read speed off will require you to press ENTER to close the decryption screen.
+Default is MED.
+
+
+
+[ERROR LIST]
+If its your first time using the program, you'll likely run into an error. Here's a list of all
+the errors, as well as causes and fixes:
+
+"ERROR: ENDCRYPT.ini doesn't exist."
+ENDCRYPT.ini is the file created when you encrypt something. To fix this, use an encryption mode
+first or download a pre-existing ENDCRYPT.ini.
+
+"ERROR: File not found."
+You will only see this if you use the auto-file encryption and enter a non-existent file path.
+To fix this, simply enter a file path that works.
+
+"ERROR: ENDCRYPT_Config.ini is missing its header."
+The config file is missing [SETTINGS] from the top of the file. The program will automatically
+generate a new config file if this is detected.
+
+"ERROR: ENDCRYPT_Config.ini is missing data."
+The config file is missing one of the keys inside. The program will automatically generate a new
+config file if this is detected.
+
+"ERROR: ENDCRYPT.ini is missing its header."
+ENDCRYPT.ini is missing its header. To fix this, add the '[KEYS]' header to the top of the file.
+
+"ERROR: ENDCRYPT.ini is missing data."
+ENDCRYPT.ini is missing one of the keys. This should never happen naturally, and if someone gave
+you a file that displayed this error then there is no fix. ENDCRYPT requires all four keys to
+decrypt text.
+ 
+
+
+[KNOWN ISSUES]
+If you decrypt a message and then delete the contents of ENDCRYPT.ini, it will give you an
+error but still tell you what the message said. This is due to the program storing the
+decrypted message in memory.
+
+Using AFE on a non-text file (like an image or video) will crash the program.
+
+Some choices in the menu haven't been fully tested. ENDCRYPT should never crash, but if it
+does it's because you entered an input I didn't consider. I think I've caught all of these, but
+a couple might still exist.
+
+Pressing enter during a decryption will close the program when it returns to the menu. This is because it queues the enter press and executes it when it returns, which closes the program.
+
+
+
+[CLOSING NOTES]
+I hope you enjoy messing around with this program as much as I enjoyed making it. It's not
+very useful or practical, but I started developing this back in 2016 as a programming project
+that I've decided to see through until its as fully featured as possible. Thank you for
+reading, and thank you for downloading this program.
+
+If you need to email me you can do so at contact@stupidcat.uk.
+You can also contact me on Discord, in my server (https://discord.gg/gzWsWNA) or directly
+(emapex).
+
+
+
+--CHANGELOG--
+
+[V4-B51-R2]
+- Fixed a crash when entering an invalid encryption mode.
+- Compiled the program differently so that everything is contained in the .exe.
+
+[V4-B50-R1]
+- V4 released.

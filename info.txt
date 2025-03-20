@@ -16,7 +16,7 @@ There's a bit more to it than that, but most of the other changes are under the 
 won't even notice them. The program should run even faster than before and has even more
 functionality, allowing you to send ridiculously long encrypted messages to your friends
 even faster than before. It  has also been streamlined to be as user-friendly as possible, so
-it should NEVER crash (get in touch if it does!).
+it should NEVER crash (if it does, oops!).
 
 
 

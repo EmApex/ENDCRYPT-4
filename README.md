@@ -34,7 +34,7 @@ Turns out it's surprisingly easy to reverse a program compiled with PyInstaller 
 
 While looking at the old code I also realised that the way I wrote code was absolutely disgusting and hard to look at, and the decompiled build had cleaned itself up somewhat and was surprisingly tolerable. In the interest of accurate archival, I replicated the way the original code was written. Sorry not sorry.
 
-Because I had no comments to refer to for features added after the early build, I had to just make some up. They're probably not what the original comments said and the code may be structured slightly differently to how it was originally, but it's close enough at this point. I replaced the deadnames, recompiled, and here we are. I added one comment that wasn't in the original code to comment on the clusterfuck that is the way keys are generated (clearly labelled with "2025 note"), but everything else is how it was back in the day, warts and all.
+Because I had no comments to refer to for features added after the early build, I had to just make some up. They're probably not what the original comments said and the code may be structured slightly differently to how it was originally, but it's close enough at this point. I replaced the deadnames, recompiled, and here we are. Everything is how it was back in the day, warts and all.
 
 That leaves us in the present, with one simple question: will ENDCRYPT be updated or get a fifth version?
 

@@ -240,7 +240,6 @@ while True:
             encb=ench.encode("utf-8")
             encb=binascii.hexlify(encb)
             ench=encb.decode("utf-8")
-            #2025 note: what the fuck?
 
             #SAVING
             if alwaysExport=="off":
